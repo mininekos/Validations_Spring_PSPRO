@@ -48,7 +48,7 @@ public class Jugador {
     private String email;
     
     @NotNull
-    @Telefono(groups=InfoAdicional.class)
+    @Telefono
     private String tlf;
     
     @AssertTrue(message = "El jugador no esta disponible" , groups = InfoAdicional.class)

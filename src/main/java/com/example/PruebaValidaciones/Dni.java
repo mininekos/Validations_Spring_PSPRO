@@ -13,8 +13,8 @@ import java.lang.annotation.RetentionPolicy;
 
 @Documented
 @Constraint(validatedBy = DniValidator.class)
-@Target( { ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER })
 @Retention(RetentionPolicy.RUNTIME)
+@Target( { ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER })
 public @interface Dni {
  
     String message() default "Dni incorrecto"; 
